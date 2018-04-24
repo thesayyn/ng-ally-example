@@ -1,0 +1,46 @@
+{
+  "$schema": "./node_modules/@angular-devkit/core/src/workspace/workspace-schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ng-ally-example": {
+      "root": "",
+      "projectType": "application",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@tdadmin/devkit:build",
+          "options": {
+            "outputPath": "dist/ng-ally-example",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@tdadmin/devkit:dev-server",
+          "options": {
+            "buildTarget": "ng-ally-example:build"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "ng-ally-example:build:production"
+            }
+          }
+        }
+      }
+    }
+  },
+  "schematics": {
+  }
+}
