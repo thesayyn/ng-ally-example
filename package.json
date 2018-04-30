@@ -10,10 +10,10 @@
   "private": true,
   "dependencies": {
     "@angular/core": "^6.0.0-rc.1",
-    "@ng-ally/database": "^6.0.0-aba7a10",
+    "@ng-ally/database": "^6.0.0-c78f7c6",
     "@ng-ally/devkit": "^6.0.0-aba7a10",
-    "@ng-ally/platform-server": "^6.0.0-aba7a10",
-    "@ng-ally/router": "^6.0.0-aba7a10",
+    "@ng-ally/platform-server": "^6.0.0-c78f7c6",
+    "@ng-ally/router": "^6.0.0-c78f7c6",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0-rc.0",
     "zone.js": "^0.8.24"

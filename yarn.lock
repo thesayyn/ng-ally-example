@@ -65,10 +65,11 @@
   dependencies:
     tslib "^1.9.0"
 
-"@ng-ally/database@^6.0.0-aba7a10":
-  version "6.0.0-aba7a10"
-  resolved "https://registry.yarnpkg.com/@ng-ally/database/-/database-6.0.0-aba7a10.tgz#ecddf32cdef46c024f7778a8c348bda7b27a4024"
+"@ng-ally/database@^6.0.0-c78f7c6":
+  version "6.0.0-c78f7c6"
+  resolved "https://registry.yarnpkg.com/@ng-ally/database/-/database-6.0.0-c78f7c6.tgz#c6d4d6fea06d1956601c63569f1e3cd52c3bdf5e"
   dependencies:
+    "@types/mongodb" "^3.0.15"
     mongodb "3.0.5"
 
 "@ng-ally/devkit@^6.0.0-aba7a10":
@@ -83,18 +84,18 @@
     webpack "^2.6.1"
     webpack-node-externals "^1.7.2"
 
-"@ng-ally/platform-server@^6.0.0-aba7a10":
-  version "6.0.0-aba7a10"
-  resolved "https://registry.yarnpkg.com/@ng-ally/platform-server/-/platform-server-6.0.0-aba7a10.tgz#d7fe8757f9c3baa15dc9c2e40ba9151774e82c01"
+"@ng-ally/platform-server@^6.0.0-c78f7c6":
+  version "6.0.0-c78f7c6"
+  resolved "https://registry.yarnpkg.com/@ng-ally/platform-server/-/platform-server-6.0.0-c78f7c6.tgz#afe9b0523c14a83ab24e352a3e79fea37da935ea"
   dependencies:
     express "^4.16.3"
     socket.io "^2.1.0"
     uws "^9.148.0"
     xmlhttprequest "^1.8.0"
 
-"@ng-ally/router@^6.0.0-aba7a10":
-  version "6.0.0-aba7a10"
-  resolved "https://registry.yarnpkg.com/@ng-ally/router/-/router-6.0.0-aba7a10.tgz#6fe56fd4bb95d0ec5c4688a3c682edf56831eecc"
+"@ng-ally/router@^6.0.0-c78f7c6":
+  version "6.0.0-c78f7c6"
+  resolved "https://registry.yarnpkg.com/@ng-ally/router/-/router-6.0.0-c78f7c6.tgz#fb1f8d4c1bbd93bcc27d885b58a26f5040cb0d07"
   dependencies:
     "@types/express" "^4.11.1"
 
@@ -141,6 +142,12 @@
     "@types/connect" "*"
     "@types/node" "*"
 
+"@types/bson@*":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@types/bson/-/bson-1.0.8.tgz#6ad272b3f049e9598ec33aed09cf56d8946b75f1"
+  dependencies:
+    "@types/node" "*"
+
 "@types/connect@*":
   version "3.4.32"
   resolved "https://registry.yarnpkg.com/@types/connect/-/connect-3.4.32.tgz#aa0e9616b9435ccad02bc52b5b454ffc2c70ba28"
@@ -169,6 +176,14 @@
 "@types/mime@*":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.0.tgz#5a7306e367c539b9f6543499de8dd519fac37a8b"
+
+"@types/mongodb@^3.0.15":
+  version "3.0.15"
+  resolved "https://registry.yarnpkg.com/@types/mongodb/-/mongodb-3.0.15.tgz#b9ae8d6dd4d24f6cc83aec23b224d03d58ae131c"
+  dependencies:
+    "@types/bson" "*"
+    "@types/events" "*"
+    "@types/node" "*"
 
 "@types/node@*":
   version "10.0.0"
