@@ -9,7 +9,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@tdadmin/devkit:build",
+          "builder": "@ng-ally/devkit:build",
           "options": {
             "outputPath": "dist/ng-ally-example",
             "main": "src/main.ts",
@@ -28,7 +28,7 @@
           }
         },
         "serve": {
-          "builder": "@tdadmin/devkit:dev-server",
+          "builder": "@ng-ally/devkit:dev-server",
           "options": {
             "buildTarget": "ng-ally-example:build"
           },

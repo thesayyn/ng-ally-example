@@ -1,6 +1,6 @@
 import { Injectable, VERSION as NG_VERSION } from '@angular/core';
-import { VERSION as TD_VERSION } from '@tdadmin/platform-server';
-import { CanDeactivate, Request, Response, CanActivate } from '@tdadmin/router'
+import { VERSION as TD_VERSION } from '@ng-ally/platform-server';
+import { CanDeactivate, Request, Response, CanActivate } from '@ng-ally/router'
 import { Observable } from 'rxjs';
 
 
@@ -11,7 +11,7 @@ export class NotMatchedRouteGuard implements CanActivate {
         if(!request.route) response.send({ 
             core:  NG_VERSION.full,
             server: TD_VERSION.full,
-            engine: '@tdadmin/platform-server'
+            engine: '@ng-ally/platform-server'
         })
         return true;
     }

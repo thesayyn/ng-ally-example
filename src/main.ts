@@ -1,5 +1,5 @@
 import { enableProdMode } from '@angular/core'
-import { platformServer } from '@tdadmin/platform-server'
+import { platformServer } from '@ng-ally/platform-server'
 import { environment } from './environments/environment'
 import { AppModule } from './app/app.module';
 

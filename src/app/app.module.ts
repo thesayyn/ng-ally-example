@@ -1,6 +1,6 @@
-import { ServerModule } from '@tdadmin/platform-server';
+import { ServerModule } from '@ng-ally/platform-server';
 import { NgModule } from '@angular/core';
-import { RouterModule, ROUTER_GUARDS } from '@tdadmin/router';
+import { RouterModule, ROUTER_GUARDS } from '@ng-ally/router';
 
 import { NotMatchedRouteGuard } from './not_matched_route_handler.guard';
 
